@@ -1,0 +1,43 @@
+.wrapper{
+    margin: auto;
+    width: 1020px;
+}
+
+hr {
+    border: none;
+    background-color: #a292b3;
+    height: 8px;
+}
+
+.header {
+    /*border: 1px dashed black;*/
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 130px;
+}
+
+.nav {
+    /*border: 1px dashed black;*/
+    margin-left: auto;
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 64px;
+}
+
+.link a {
+    text-decoration: none;
+    font-family: Segoe UI, sans-serif;
+    font-size: 19px;
+    color: #545454;
+
+}
+
+.link img {
+    margin-bottom: 4.5px;
+    margin-right: 9px;
+}
