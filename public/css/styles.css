@@ -1,6 +1,6 @@
 .wrapper{
     margin: auto;
-    width: 1020px;
+    max-width: 1020px;
 }
 
 hr {
@@ -8,25 +8,34 @@ hr {
     background-color: #a292b3;
     height: 8px;
 }
-
+/*======================================HEADER==========================*/
 .header {
-    /*border: 1px dashed black;*/
+    /*border: 1px solid green;*/
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     margin: auto;
     height: 130px;
 }
+/*----------------------------*/
+.logo {
+    /*border: 2px solid red;*/
+    margin-right: 256px;
+}
+/*------------------------------*/
 
 .nav {
-    /*border: 1px dashed black;*/
+    /*border: 1px dashed yellow;*/
     margin-left: auto;
     display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
 }
 
 .link {
+    /*border: 1px dashed green;*/
     display: flex;
     align-items: flex-end;
-    margin-left: 64px;
 }
 
 .link a {
@@ -38,10 +47,61 @@ hr {
 }
 
 .link img {
+    /*border: 1px dashed black;*/
     margin-bottom: 4.5px;
     margin-right: 9px;
 }
+/*====================================================IMAGE============*/
+.banner {
+    /*border: 1px dashed green;*/
+    width: 100%;
+}
 
-.image h1 {
-    font-family: StRydeRegular, sans-serif;
+.banner img {
+    width: 100%;
+}
+/*===========================================QT==========================*/
+.QT {
+    /*border: 1px dashed orange;*/
+    padding-top: 41px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.QT hr {
+    border: none;
+    background-color: #bfbfbf;
+    height: 2px;
+}
+
+.QT span {
+    color: #82699d;
+    font-weight: bold;
+
+}
+
+.QT p {
+    text-align: center;
+    font-size: 23px;
+}
+
+@media (max-width: 950px) {
+    .logo {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 790px) {
+    .logo {
+       margin: auto;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        display: none;
+    }
 }
