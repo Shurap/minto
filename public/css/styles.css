@@ -36,6 +36,7 @@ hr {
     /*border: 1px dashed green;*/
     display: flex;
     align-items: flex-end;
+    margin: 5px;
 }
 
 .link a {
@@ -46,10 +47,10 @@ hr {
 
 }
 
-.link img {
-    /*border: 1px dashed black;*/
-    margin-bottom: 4.5px;
-    margin-right: 9px;
+/*.link img {*/
+    /*!*border: 1px dashed black;*!*/
+    /*margin-bottom: 4.5px;*/
+    /*margin-right: 9px;*/
 }
 /*====================================================IMAGE============*/
 .banner {
