@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Segoe UI Italic";
+    src: url("../fonts/SegoeUIItalic.woff")
+}
+
+@font-face {
+    font-family: "Segoe UI Bold";
+    src: url("../fonts/SegoeUIBold.woff")
+}
+
+@font-face {
+    font-family: "Segoe UI Regular";
+    src: url("../fonts/SegoeUIRegular.woff")
+}
+
 hr {
     border: none;
     margin: 0;
@@ -36,7 +51,7 @@ hr {
 
 .nav a {
     text-decoration: none;
-    font-family: Segoe UI, sans-serif;
+    font-family: Segoe UI Regular, sans-serif;
     font-size: 19px;
     color: #545454;
 }
@@ -54,10 +69,16 @@ hr {
 /*===========================================QT==========================*/
 .QT {
     /*opacity: 0.5;*/
-    /*border: 1px dashed orange;*/
-    padding-top: 41px;
+    /*border: 1px dashed red;*/
+    padding-top: 45px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+.QT div {
+    /*border: 1px dashed red;*/
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .QT hr {
@@ -67,31 +88,54 @@ hr {
 }
 
 .QT span {
+    font-family: Segoe UI Bold, sans-serif;
     color: #82699d;
-    font-weight: bold;
-
 }
 
 .QT p {
     text-align: center;
     font-size: 23px;
+    line-height: 36px;
+    margin: 8px;
 }
 
 /*===============================CONTENT=============================*/
 .content {
     /*opacity: 0.5;*/
-    /*border: 1px dashed crimson;*/
+    /*border: 1px dashed red;*/
     display: flex;
+    align-items: center;
     /*padding: 25px;*/
 }
 
 .content img {
-    /*border: 1px dashed green;*/
+    /*border: 1px dashed red;*/
     margin: 25px;
+    width: 100%;
 }
 
-.content-text {
-    /*border: 1px dashed green;*/
+.content article {
+    /*border: 1px dashed red;*/
+    padding-top: 75px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.content b {
+    font-family: Segoe UI Bold, sans-serif;
+    font-size: 31px;
+    color: #505051;
+}
+
+.content p {
+    font-family: Segoe UI Regular, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #838383;
+}
+
+.content div {
+    /*border: 1px dashed red;*/
 }
 
 /*===================================TITLE===========================*/
