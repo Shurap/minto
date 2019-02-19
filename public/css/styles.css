@@ -13,10 +13,17 @@
     src: url("../fonts/SegoeUIRegular.woff")
 }
 
-/*@font-face {*/
-/*font-family: "St Ryde Regular";*/
-/*src: url("../fonts/StRyde-Regular.woff")*/
-/*}*/
+@font-face {
+    font-family: "St Ryde Regular";
+    src: url("../fonts/StRyde-Regular.woff")
+}
+
+@font-face {
+    font-family: "Sofia Pro Light";
+    src: url("../fonts/sofia-pro-light.woff")
+}
+
+
 
 hr {
     border: none;
@@ -66,15 +73,41 @@ hr {
 .banner {
     /*opacity: 0.5;*/
     width: 100%;
+    position: relative;
+
 }
 
 .banner img {
     width: 100%;
+
 }
 
-/*.banner p {*/
-/*font-family: St Ryde Regular, sans-serif;*/
-/*}*/
+.big-text {
+    /*border: 1px dashed red;*/
+    position: absolute;
+    color: white;
+    text-shadow: -3px 3px #52424c;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: St Ryde Regular, sans-serif;
+    font-size: 117px;
+    margin: 0;
+}
+
+.small-text {
+    position: absolute;
+    color: white;
+    text-shadow: -1px 1px #52424c;
+    white-space: nowrap;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Sofia Pro Light, sans-serif;
+    font-size: 31px;
+    margin: 0;
+
+}
 
 /*===========================================QT==========================*/
 .QT {
@@ -230,11 +263,22 @@ hr {
 }
 
 /*==================================MEDIA===========================*/
+@media (max-width: 1040px) {
+    .big-text {
+        font-size: 11vw;
+    }
+    .small-text {
+        font-size: 3vw;
+    }
+}
+
+
 @media (max-width: 820px) {
     .content {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .content article {
         padding-top: 5px;
     }
@@ -245,6 +289,7 @@ hr {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .logo {
         margin: 0;
     }
@@ -254,10 +299,12 @@ hr {
     .header {
         height: auto;
     }
+
     .nav {
         flex-direction: column;
         align-items: center;
     }
+
     .circle {
         display: none;
     }
