@@ -36,7 +36,7 @@ hr {
 /*======================================HEADER==========================*/
 .header {
     /*opacity: 0.5;*/
-    border: 1px dashed red;
+    /*border: 1px dashed red;*/
     display: flex;
     align-items: center;
     height: 110px;
