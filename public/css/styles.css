@@ -23,6 +23,15 @@
     src: url("../fonts/sofia-pro-light.woff")
 }
 
+@font-face {
+    font-family: "HelveticaCE Bold";
+    src: url("../fonts/HelveticaCE-Bold.woff2")
+}
+
+@font-face {
+    font-family: "HelveticaCE";
+    src: url("../fonts/HelveticaCE.woff2")
+}
 
 
 hr {
@@ -35,6 +44,7 @@ hr {
 .wrapper {
     margin: auto;
     max-width: 1020px;
+    min-width: 220px;
     /*background-image: url("../images/all_content.jpg");*/
     /*background-position: top center;*/
     /*background-position-y: -16px;*/
@@ -77,8 +87,21 @@ hr {
 
 }
 
-.banner img {
+.big-image {
     width: 100%;
+
+}
+
+.left {
+    position: absolute;
+    top: 47%;
+    left: 0.5%;
+}
+
+.right {
+    position: absolute;
+    top: 47%;
+    right: 0.5%;
 
 }
 
@@ -87,9 +110,12 @@ hr {
     position: absolute;
     color: white;
     text-shadow: -3px 3px #52424c;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 35%;
+
+    /*top: 40%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     font-family: St Ryde Regular, sans-serif;
     font-size: 117px;
     margin: 0;
@@ -100,9 +126,13 @@ hr {
     color: white;
     text-shadow: -1px 1px #52424c;
     white-space: nowrap;
-    top: 57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 21%;
+
+
+    /*top: 57%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
     font-family: Sofia Pro Light, sans-serif;
     font-size: 31px;
     margin: 0;
@@ -203,8 +233,13 @@ hr {
     height: 110px;
 }
 
+.title p {
+    font-family: HelveticaCE, sans-serif;
+    font-size: 23px;
+}
+
 .title span {
-    font-weight: bold;
+    font-family: HelveticaCE Bold, sans-serif;
 }
 
 .title div {
@@ -249,7 +284,7 @@ hr {
 }
 
 .footer section {
-    /*border: 1px dashed green;*/
+    /*border: 1px dashed red;*/
     height: 67px;
     max-width: 1020px;
     margin: auto;
@@ -260,6 +295,11 @@ hr {
 
 .footer a {
     margin: 10px;
+}
+
+.links {
+    /*border: 1px dashed red;*/
+    display: flex;
 }
 
 /*==================================MEDIA===========================*/
